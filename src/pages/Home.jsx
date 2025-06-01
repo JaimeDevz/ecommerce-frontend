@@ -1,7 +1,6 @@
 import React from "react";
 import ProductList from "../components/ProductList";
-import NavBar from "../components/NavBar";
-import Hero from "../components/Hero";
+import Hero from "../sections/Hero";
 
 const Home = () => {
   return (

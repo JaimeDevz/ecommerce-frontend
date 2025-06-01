@@ -12,7 +12,7 @@ function App() {
   return (
     <div
       className={`top-0 left-0 w-full h-full ${
-        dark ? "bg-black text-white" : "bg-white text-black"
+        dark ? "bg-black text-white" : "bg-[#d2b48c] text-black"
       }`}
     >
       <NavBar />

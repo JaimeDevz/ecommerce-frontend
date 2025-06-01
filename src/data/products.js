@@ -1,10 +1,12 @@
+import Img1 from "../assets/image (12).jpg";
+
 const products = [
   {
     id: 1,
     title: "Product 1",
     price: 100,
     description: "This is a great product.",
-    image: "",
+    image: Img1,
   },
   {
     id: 2,

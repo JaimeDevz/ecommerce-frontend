@@ -2,6 +2,8 @@
 
 A simple front-end e-commerce site built with React, Vite, Tailwind, Redux Toolkit, and GSAP animations.
 
+> 🚧 This project is a work in progress! I'm actively building and improving it.
+
 ## 💡 Features
 - Product cards with animated loading
 - Add to cart functionality with Redux
@@ -20,4 +22,4 @@ A simple front-end e-commerce site built with React, Vite, Tailwind, Redux Toolk
 npm install
 npm run dev
 
-> 🚧 This project is a work in progress! I'm actively building and improving it.
+

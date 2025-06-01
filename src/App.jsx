@@ -5,14 +5,15 @@ import Cart from "./pages/Cart";
 import React from "react";
 import NavBar from "./components/NavBar";
 import { useSelector } from "react-redux";
+import ProductList from "./components/ProductList";
 
 function App() {
   const dark = useSelector((state) => state.theme.dark);
 
   return (
     <div
-      className={`top-0 left-0 w-full h-full ${
-        dark ? "bg-black text-white" : "bg-[#d2b48c] text-black"
+      className={`w-full min-h-screen  ${
+        dark ? "bg-[#1e1e1e] text-white" : "bg-[#e1e1e1] text-black"
       }`}
     >
       <NavBar />
@@ -21,6 +22,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/product/:id" element={<Product />} />
         <Route path="/cart" element={<Cart />} />
+        <Route path="/products" element={<ProductList />} />
       </Routes>
     </div>
   );

@@ -13,8 +13,8 @@ const Hero = () => {
     () => {
       gsap.fromTo(
         imageRef.current,
-        { scale: 1.2, opacity: 0 },
-        { scale: 1, opacity: 1, duration: 2, ease: "power2.out" }
+        { scale: 1.1, opacity: 0 },
+        { scale: 1, opacity: 1, duration: 3, ease: "power2.out" }
       );
     },
     { scope: container }

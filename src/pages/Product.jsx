@@ -17,22 +17,22 @@ export default function Product() {
     dispatch(
       addToCart({ id: product.id, title: product.title, price: product.price })
     );
-    navigate("/cart");
   };
 
   return (
     <div
-      className={`p-6 max-w-md mx-auto top-0 left-0 w-full h-full ${
-        dark ? "bg-black text-white" : "bg-white text-black"
-      }`}
+      className={`p-6 text-center max-w-md mx-auto top-0 left-0 w-full h-full `}
     >
       <img
         src={product.image}
         alt={product.title}
-        className="w-full h-64 object-cover rounded mb-4"
+        className="w-full min-h-full object-cover rounded mb-4"
       />
-      <h1 className="text-2xl font-bold mb-2">{product.title}</h1>
-      <p className="mb-4">${product.price}</p>
+      <h1 className="text-2xl mb-2 underline underline-offset-4  font-semibold">
+        {product.title}
+      </h1>
+      <p className="mb-2 text-xl font-semibold">${product.price}</p>
+      <p className="text-sm text-center mb-3">{product.description}</p>
       <button
         onClick={handleAddToCart}
         className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition"

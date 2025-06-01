@@ -18,12 +18,12 @@ const ProductList = () => {
       {
         opacity: 1,
         y: 0,
-        duration: 0.3,
-        stagger: 0.1,
+        duration: 0.4,
+        stagger: 0.2,
         ease: "power2.out",
         scrollTrigger: {
           trigger: containerRef.current,
-          start: "top 65%",
+          start: "top 70%",
           toggleActions: "play none none reverse",
         },
       }
@@ -31,7 +31,7 @@ const ProductList = () => {
   }, []);
 
   return (
-    <div className="p-6" ref={containerRef}>
+    <div className="p-6 " ref={containerRef}>
       <h1 className="text-2xl text-center font-bold mb-10">Coffee's</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
         {products.map((item) => (

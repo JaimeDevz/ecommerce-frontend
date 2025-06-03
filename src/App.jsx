@@ -6,6 +6,7 @@ import React from "react";
 import NavBar from "./components/NavBar";
 import { useSelector } from "react-redux";
 import ProductList from "./components/ProductList";
+import Footer from "./components/Footer";
 
 function App() {
   const dark = useSelector((state) => state.theme.dark);
@@ -24,6 +25,8 @@ function App() {
         <Route path="/cart" element={<Cart />} />
         <Route path="/products" element={<ProductList />} />
       </Routes>
+
+      <Footer />
     </div>
   );
 }

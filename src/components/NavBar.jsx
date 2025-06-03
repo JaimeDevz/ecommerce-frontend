@@ -13,11 +13,7 @@ const NavBar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav
-      className={`p-4 border-b-2 rounded-2xl ${
-        DarkMode ? "border-[#6f4e37]" : "border-black"
-      }`}
-    >
+    <nav className={`p-4 border-b-2 rounded-2xl border-[#6f4e37] `}>
       <div className="flex items-center justify-between">
         {/* Logo */}
         <Link to="/" className="flex items-center">
@@ -42,16 +38,6 @@ const NavBar = () => {
           <li>
             <Link to="/products" className="hover:text-gray-400">
               Products
-            </Link>
-          </li>
-          <li>
-            <Link to="/about" className="hover:text-gray-400">
-              About
-            </Link>
-          </li>
-          <li>
-            <Link to="/contact" className="hover:text-gray-400">
-              Contact
             </Link>
           </li>
         </ul>
@@ -108,24 +94,6 @@ const NavBar = () => {
               className="hover:text-gray-400 block"
             >
               Products
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="/about"
-              onClick={() => setMenuOpen(false)}
-              className="hover:text-gray-400 block"
-            >
-              About
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="/contact"
-              onClick={() => setMenuOpen(false)}
-              className="hover:text-gray-400 block"
-            >
-              Contact
             </Link>
           </li>
           <div className="flex items-center space-x-4 pt-2">

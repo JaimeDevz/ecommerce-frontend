@@ -2,6 +2,8 @@
 
 A simple front-end e-commerce site built with React, Vite, Tailwind, Redux Toolkit, and GSAP animations.
 
+🌐 **Live Demo**: [solstice-brews.netlify.app](https://solstice-brews.netlify.app/)
+
 > 🚧 This project is a work in progress! I'm actively building and improving it.
 
 ## 💡 Features
@@ -18,8 +20,7 @@ A simple front-end e-commerce site built with React, Vite, Tailwind, Redux Toolk
 - @gsap/react
 
 ## 🔧 Setup
+
 ```bash               
 npm install
 npm run dev
-
-
